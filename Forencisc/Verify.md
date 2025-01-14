@@ -9,7 +9,7 @@ To decrypt the file once you've verified the hash, run ./decrypt.sh files/<file>
 # SOLUSI
 
 Pertama ketik ssh berikut pada terminal anda **ssh -p 55959 ctf-player@rhea.picoctf.net**, lalu kita masukan password **6dd28e9b** dan ketik **yes** untuk setuju.
-Untuk mengecek file yang saat kita berada ketik **ls** dan dapat melihat : **checksum.txt  decrypt.sh  files**. Jika kita membuka **cat checksum.txt** akan keluar **03b52eabed517324828b9e09cbbf8a7b0911f348f76cf989ba6d51acede6d5d8** ialah hash
+Untuk mengecek file yang saat kita berada ketik **ls** dan dapat melihat : **checksum.txt  decrypt.sh  files**. Jika kita membuka **cat checksum.txt** akan keluar ```03b52eabed517324828b9e09cbbf8a7b0911f348f76cf989ba6d51acede6d5d8``` ialah hash
 
 nb: hash adalah sebuah kriptografi yang mengubah input data (text) menjadi nilai tetap yang tidak bisa berubah kembali seperti semula.
 
