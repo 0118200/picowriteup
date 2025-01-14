@@ -10,3 +10,5 @@ Jika kita belum memiliki alat tersebut dapat mengnstall dengan cara ```sudo apt 
 
 Untuk melihat yang tersembunyi pada gambar kita dapat menggunakan ```gimp```. Dan pada kasus ini kita akan melihat ```metadata``` dari gambar tersebut dengan melihat toolbar dan tekan ```image``` lalu tekan ```metadata``` >> ```view metadata``` >> ```xmp``` dan kita dapat melihat bahwa ada code dengan base64 ```cGljb0NURntNRTcORDQ3QV9ISUREM05fNGRhYmRkY2J9Cg==``` , tugas terakhir kita me decode base64 tersebut dengan cara menggunakan website ```https://www.base64decode.org/``` dan memasukan base64 sebagai input dan mendapatkan flag 
 ```picoCTF{ME74D47A_..._...}```
+
+Atau juga dapat menjalankan perintah ```echo cGljb0NURntNRTcORDQ3QV9ISUREM05fNGRhYmRkY2J9Cg== | base64 -d```
