@@ -15,4 +15,5 @@ Lalu yang terakhir ialah ```binwalk cat.jpg``` untuk menganalisis dan mengekstra
 
 Setelah memvalidasi bahwa file tersebut termasuk ke dalam format gambar, kita menjalankan perintah ```gimp cat.jpg``` untuk mencari metadata dengan melihat toolbar dan tekan ```image``` >> ```metadata``` >> ```view metadata``` >> ```xmp``` dan kita dapat melihat bahwa ada code dengan base64 ```cGljb0NURnt0aGvfbTN0YWrhdGFfMXNfbW9kaWZpZWR9```
 
-base64 ialah encoding dari representasi biner menjadi text ASCII, dan untuk decoding kita dapat menjalankan perintah ```echo cGljb0NURnt0aGvfbTN0YWrhdGFfMXNfbW9kaWZpZWR9 | base64 -d``` dan mendapatkan flag 
+base64 ialah encoding dari representasi biner menjadi text ASCII, dan untuk decoding kita dapat menjalankan perintah ```echo cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9 | base64 -d``` 
+dan mendapatkan flag ```picoCTF{the_m3tadata_..._...}```
