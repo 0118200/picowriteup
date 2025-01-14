@@ -12,3 +12,5 @@ Untuk melihat yang tersembunyi pada gambar kita dapat menggunakan ```gimp```. Da
 ```picoCTF{ME74D47A_..._...}```
 
 Atau juga dapat menjalankan perintah ```echo cGljb0NURntNRTcORDQ3QV9ISUREM05fNGRhYmRkY2J9Cg== | base64 -d```
+
+nb: base64 merupakan metode encoding yang digunakan untuk merepresentasikan data biner kedalam ASCII 
