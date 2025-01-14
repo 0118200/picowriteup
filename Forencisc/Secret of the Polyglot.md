@@ -18,5 +18,6 @@ Lalu untuk membaca file png tersebut kita harus mengubah file pdf menjadi file p
 
 nb : GOCR adalah sebuah program perangkat lunak untuk optical character recognition (OCR), yang berfungsi untuk mengubah teks yang ada dalam gambar (misalnya gambar hasil scan atau foto teks) menjadi teks yang dapat diedit.
 
-Setelah itu kita menjalankan perintah : ```gocr flag2of2-final.png | tr -d "\n"``` untuk membaca png tersebut menjadi text. Perintah tr -d "\n" digunakan untuk menghapus karakter newline
+Setelah itu kita menjalankan perintah : ```gocr flag2of2-final.png | tr -d "\n"``` untuk membaca png tersebut menjadi text. Perintah ```tr -d "\n"``` digunakan untuk menghapus karakter newline
+
 Dan kita telah berhasil mendapatkan flag : ```piconF{f1u3n7_``` namun kita harus menggabungkan kedua part menjadi satu untuk menjadikan flag yang utuh ```piconF{f1u3n7_1n_pn9_&_..._...}```
