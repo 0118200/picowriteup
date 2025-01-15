@@ -11,7 +11,9 @@ Untuk menginvestigasi kita menggunakan perintah ```file enc_flag``` dan menunjuk
 jadi kita coba membuka file tersebut dengan perintah ```cat enc_flag``` setelah file terbaca ```YidkM0JxZGtwQlRYdHFhR3g2YUhsZmF6TnFlVGwzWVROclh6YzRNalV3YUcxcWZRPT0nCg==``` 
 dan memberikan kode ASCII namun terdapat ciri ciri bahwa kode tersebut termasuk dalam base64 encode
 
-Untuk menyelesaikan encode kita perlu decode base64 tersebut untuk mendapatkan flag dengan perintah ```echo YidkM0JxZGtwQlRYdHFhR3g2YUhsZmF6TnFlVGwzWVROclh6YzRNalV3YUcxcWZRPT0nCg== | base64 -d``` dan memberikan kode yang telah di decode 
+Untuk menyelesaikan encode kita perlu decode base64 tersebut untuk mendapatkan flag dengan perintah 
+```echo YidkM0JxZGtwQlRYdHFhR3g2YUhsZmF6TnFlVGwzWVROclh6YzRNalV3YUcxcWZRPT0nCg== | base64 -d``` 
+dan memberikan kode yang telah di decode 
 
 ```b'd3BqdkpBTXtqaGx6aHlfazNqeTl3YTNrXzc4MjUwaG1qfQ=='```
 
