@@ -20,6 +20,7 @@ Units are in 512-byte sectors
 002:  000:000   0000002048   0000262143   0000260096   Linux (0x83)
 ```
 Pada linux (0x83) kita mengetahui pada offset dimulai dari 2048, kita coba cek partisi tsb ```fls -o 2048 dds2-alpine.flag.img```
+___fls___ untuk membaca list dari partisi ___-o 2048___ dan pada file ___dds2-alpine.flag.img___
 ```
 d/d 26417:	home
 d/d 11:	lost+found
@@ -43,4 +44,27 @@ d/d 12223:	usr
 d/d 14229:	var
 V/V 32513:	$OrphanFiles
 ```
-Terdapat list dari 
+Terdapat list dari partisi tersebut menemukan dir root, kita coba menggunakan perintah ```fls -o 2048 dds2-alpine.flag.img 18290```
+sama fungsi command seperti sebelumnya, namun menambahkan sedikit perbedaan yaitu ___18290___ untuk membuka dir root
+```
+r/r 18291:	down-at-the-bottom.txt
+```
+Kita menemukan file yang ber ekstensi .txt dan dapat dibaca, umumnya membaca ssebuah text menggunakan ___cat___ namun berbeda dengan sleuth kit kita menggunakan ___icat___.
+```icat -o 2048 dds2-alpine.flag.img 18291``` 
+
+___icat___ untuk membaca dari offset ___-o 2048___ oleh disk ___dds2-alpine.flag.img___ dan kode dari dir root ___18291___
+```
+   _     _     _     _     _     _     _     _     _     _     _     _     _  
+  / \   / \   / \   / \   / \   / \   / \   / \   / \   / \   / \   / \   / \ 
+ ( p ) ( i ) ( c ) ( o ) ( C ) ( T ) ( F ) ( { ) ( f ) ( 0 ) ( r ) ( 3 ) ( n )
+  \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/ 
+   _     _     _     _     _     _     _     _     _     _     _     _     _  
+  / \   / \   / \   / \   / \   / \   / \   / \   / \   / \   / \   / \   / \ 
+ ( s ) ( 1 ) ( c ) ( 4 ) ( t ) ( 0 ) ( r ) ( _ ) ( n ) ( 0 ) ( v ) ( 1 ) ( c )
+  \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/ 
+   _     _     _     _     _     _     _     _     _     _     _  
+  / \   / \   / \   / \   / \   / \   / \   / \   / \   / \   / \ 
+ ( 3 ) ( _ ) ( f ) ( f ) ( 2 ) ( 7 ) ( f ) ( 1 ) ( 3 ) ( 9 ) ( } )
+  \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/ 
+```
+Output pada diatas kita bisa menyusun menjadi flag yang utuh, namun dengan cara lain kita juga dapat menggunakan autopsy
