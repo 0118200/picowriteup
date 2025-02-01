@@ -54,9 +54,9 @@ r/r 1845:	its-all-in-the-name
 ```
 Terdapat file ekstensi file kita coba baca ```icat -o 1140736 disk.flag.img 8 | strings```
 
-icat : membaca file/disk
--o <offset> : tujuan dari icat
-8 : sector 
+icat : membaca file/disk,
+-o <offset> : tujuan dari icat,
+8 : sector,
 | strings : menggabungkan strings pada command 
 
 Saya menggunakan icat untuk membaca offset 1140736 dari 8 sector partisi 3 dan kita akan coba menggunakan xxd untuk mengkonversi output menjadi hexadesimal dan menggunakan grep untuk mencari flag
